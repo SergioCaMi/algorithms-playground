@@ -6,7 +6,11 @@
  */
 
 function sayHi(name, language) {
-    return;
+    if (language=="spanish"){
+        return `Hola, ${name}!`;
+    } else {
+        return `Bonjour, ${name}!`;
+    }
 }
 
 console.log(sayHi("Carlos", "spanish")); // "Hola, Carlos!", se espera un saludo en español

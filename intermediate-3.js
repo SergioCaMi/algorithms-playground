@@ -10,6 +10,11 @@
 
 function getWords5Letters(words) {
     let words5Letters = [];
+    for (let word of words){
+        if (word.length==5){
+            words5Letters.push(word);
+        }
+    }
 
     return words5Letters;
 }

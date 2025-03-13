@@ -8,9 +8,18 @@
  * Además, usa el valor que retorna la función para escribir un mensaje diciendo si dicha persona es mayor de edad en el su pais o no
  */
 
+
+
 function isAdultInCountryWithObject(person) {
-    return;
+    if (person.country== "EEUU"){
+        return (person.age>=21)
+    } else {
+        return (person.age>=18)
+    }
 }
+
+
+
 
 let isCarlosAdult = isAdultInCountryWithObject({ name: "Carlos", age: 17, country: "España" });
 
@@ -18,6 +27,11 @@ let isCarlosAdult = isAdultInCountryWithObject({ name: "Carlos", age: 17, countr
  * Usa un if...else para evaluar la variable isCarlosAdult, y mostrar un mensaje por consola, de este estilo:
  * "Carlos es(o no) adulto en España"
  */
+if (isCarlosAdult){
+    console.log("Carlos es adulto en España");
+} else {
+    console.log("Carlos no es adulto en España");
+}
 
 let isJohnAdult = isAdultInCountryWithObject({ name: "John", age: 21, country: "EEUU" });
 
@@ -25,3 +39,9 @@ let isJohnAdult = isAdultInCountryWithObject({ name: "John", age: 21, country: "
  * Usa un if...else para evaluar la variable isJohnAdult, un mensaje por consola, de este estilo:
  * "John es(o no) adulto en EEUU"
  */
+
+if (isJohnAdult){
+    console.log("John es adulto en EEUU");
+} else {
+    console.log("John no es adulto en EEUU");
+}

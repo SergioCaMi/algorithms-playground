@@ -8,7 +8,13 @@
 */
 
 function sumDeposits(deposits) {
-    return;
+    let saldoTotal=0;
+    for (let transaccion of deposits){
+        if (transaccion>0){
+            saldoTotal = saldoTotal + (transaccion);
+        }
+    }
+    return saldoTotal;
 }
 
 console.log(sumDeposits([200, 300, -100, 500])); 

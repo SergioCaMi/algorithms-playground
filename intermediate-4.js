@@ -10,8 +10,15 @@
  * Pista: La funcion 'includes' de JavaScript te puede ayudar a encontrar una cadena de texto
  */
 
+// cadena: 'ATCGGCTA'
+
 function checkDNAForAlzheimer(sequences) {
-    return;
+    let cadena = 'ATCGGCTA';
+    for (let sequence of sequences){
+       return sequence.includes(cadena);
+    }
+    console.log("--------");
+    return false;
 }
 
 console.log(checkDNAForAlzheimer([

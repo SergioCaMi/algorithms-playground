@@ -8,7 +8,7 @@
  */
 
 function isAdult(person) {
-    return;
+    return person.age>=18;
 }
 
 // Caso de prueba 1: Persona justo por debajo de la mayoría de edad
